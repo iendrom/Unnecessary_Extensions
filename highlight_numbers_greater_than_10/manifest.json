@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Highlight Numbers",
+    "version": "1.0",
+    "description": "Highlight numbers greater than 10 in yellow.",
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["style.css"]
+      }
+    ],
+    "permissions": ["activeTab"]
+  }
+  
