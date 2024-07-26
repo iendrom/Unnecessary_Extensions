@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Loop Video",
+  "version": "1.0",
+  "description": "Automatically enables loop for videos on any page.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
